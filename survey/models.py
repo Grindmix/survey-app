@@ -20,7 +20,7 @@ class Survey(models.Model):
             return None
 
     def get_absolute_url(self):
-        return reverse("id=", args=[str(self.id)])
+        return reverse("survey-form", args=[str(self.id)])
     
 
 class Question(models.Model):

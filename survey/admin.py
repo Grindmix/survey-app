@@ -18,7 +18,7 @@ class ChoiceInLine(admin.TabularInline):
 @admin.register(Survey)
 class SurveyAdmin(admin.ModelAdmin):
     list_display = ('title', 'pub_date', 'require_login')
-    fields = ['title', 'pub_date']
+    fields = ['title', 'pub_date', 'require_login']
     inlines = [QuestionInLine]
 
 
